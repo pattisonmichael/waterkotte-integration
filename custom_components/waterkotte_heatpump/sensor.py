@@ -214,6 +214,16 @@ SENSOR_TYPES = {
         None,
         None,
     ],
+     "temperature_water_setpoint": [
+        "Temperature Water Setpoint",
+        EcotouchTag.TEMPERATURE_WATER_SETPOINT,
+        DEVICE_CLASS_TEMPERATURE,
+        TEMP_CELSIUS,
+        "mdi:snowflake-thermometer",
+        True,
+        None,
+        None,
+     ],
     "temperature_pool": [
         "Temperature Pool",
         EcotouchTag.TEMPERATURE_POOL,
