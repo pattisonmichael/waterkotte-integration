@@ -16,6 +16,8 @@ from homeassistant.helpers.typing import ConfigType, HomeAssistantType
 
 from homeassistant.const import (
     DEVICE_CLASS_DATE,
+    DEVICE_CLASS_POWER,
+    POWER_KILO_WATT,
     DEVICE_CLASS_POWER_FACTOR,
     PERCENTAGE,
     DEVICE_CLASS_PRESSURE,
@@ -307,8 +309,8 @@ SENSOR_TYPES = {
     "power_compressor": [
         "Power Compressor",
         EcotouchTag.POWER_COMPRESSOR,
-        DEVICE_CLASS_POWER_FACTOR,
-        PERCENTAGE,
+        DEVICE_CLASS_POWER,
+        POWER_KILO_WATT,
         "mdi:gauge",
         False,
         None,
@@ -317,8 +319,8 @@ SENSOR_TYPES = {
     "power_heating": [
         "Power Heating",
         EcotouchTag.POWER_HEATING,
-        DEVICE_CLASS_POWER_FACTOR,
-        PERCENTAGE,
+        DEVICE_CLASS_POWER,
+        POWER_KILO_WATT,
         "mdi:gauge",
         False,
         None,
@@ -327,8 +329,8 @@ SENSOR_TYPES = {
     "power_cooling": [
         "Power Cooling",
         EcotouchTag.POWER_COOLING,
-        DEVICE_CLASS_POWER_FACTOR,
-        PERCENTAGE,
+        DEVICE_CLASS_POWER,
+        POWER_KILO_WATT,
         "mdi:gauge",
         False,
         None,
